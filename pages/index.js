@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useSession, signIn, signOut } from "next-auth/react"
 import { Card, CardBody, Button, Flex, Center, useColorMode, VStack, Text, Avatar, useToast, Tooltip } from "@chakra-ui/react";
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
+import Meta from '@/component/meta';
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -23,6 +24,7 @@ export default function Home() {
 
   return (
     <>
+      <Meta />
       <Flex height='100vh' w='100%' align='center' justify='center'>
         <Card w='300px'>
           <CardBody>
