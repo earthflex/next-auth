@@ -1,4 +1,3 @@
-import '@/styles/globals.css'
 import { SessionProvider } from "next-auth/react"
 import { ChakraBaseProvider, extendBaseTheme } from '@chakra-ui/react'
 import { ColorModeScript } from '@chakra-ui/react'
