@@ -1,17 +1,19 @@
 import Head from "next/head";
 
-// const DOMAIN = "https://2275-49-49-233-191.ap.ngrok.io"
-const DOMAIN = "https://next-auth-earthflex.vercel.app"
+const DOMAIN = "https://2275-49-49-233-191.ap.ngrok.io"
+// const DOMAIN = "https://next-auth-earthflex.vercel.app"
 
 export default function Meta({
   title = "Next Auth & Chakra UI",
-  description = "Next.js Next Auth & Chakra UI",
-  image = `${DOMAIN}/og.png`,
+  description = "Example : Next.js Next Auth & Chakra UI Toggle Color Mode",
+  author = "earthflex.dev",
+  image = `${DOMAIN}/api/og`,
 }) {
   return (
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="author" content={author}></meta>
       <link rel="icon" href="favicon.ico" type="image/x-icon" />
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       <link rel="icon" type="image/png" href="favicon.png" />
@@ -32,8 +34,6 @@ export default function Meta({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-
-
     </Head>
   );
 }
