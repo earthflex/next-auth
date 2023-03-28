@@ -1,7 +1,7 @@
 import Head from "next/head";
 
-const DOMAIN = "https://2275-49-49-233-191.ap.ngrok.io"
-// const DOMAIN = "https://next-auth-earthflex.vercel.app"
+// const DOMAIN = "https://2275-49-49-233-191.ap.ngrok.io"
+const DOMAIN = "https://next-auth-earthflex.vercel.app"
 
 export default function Meta({
   title = "Next Auth & Chakra UI",
